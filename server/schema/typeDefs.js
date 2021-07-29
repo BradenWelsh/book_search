@@ -10,16 +10,16 @@ type User {
 type Query {
     me: User
 }
-input bookInput {
-    bookId: String!
+type Book {
+    bookId: String
     authors: [String]
     description: String
     title: String
     image: String
     link: String
 }
-type Book {
-    bookId: String
+input bookInput {
+    bookId: String!
     authors: [String]
     description: String
     title: String
